@@ -5,138 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peter Griffin - CV</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- adding Favicon by w3school.com -->
-    <link rel="icon"  type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
-    <!-- Overview for the menu-->
-    <header>
-        <div class="top-pane">
-            <img src="Peter_Griffin.png" alt="Profile Image" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#profile">Profile</a></li>
-                    <li><a href="#career">Career Summary</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#hobbies">Hobbies</a></li>
-                </ul>
-            </nav>
-        </div>
+    <!-- Header and Navigation -->
+    <header class="header">
+        <img src="logo.png" alt="Logo" class="logo">
+        <nav>
+            <a href="#career">Career Summary</a> |
+            <a href="#education">Education & Qualifications</a> |
+            <a href="#hobbies">Interests & Hobbies</a>
+        </nav>
     </header>
 
-    <!-- Main Container for Profile, Career, Education, and Hobbies -->
     <div class="container">
-        <!-- Left pane for profile -->
-        <div class="left-pane">
-            <section id="profile">
-                <h1>Peter Griffin</h1>
-                <h2>Profession: Towel Boy</h2>
-                <p>This man is Peter Griffin, who lives in the way I am desiring for.</p>
-                <img src="Peter_Griffin.png" alt="Peter Griffin" width="200">
-                <ul>
-                    <li>Fighting with Mr. Chicken</li>
-                    <li>Go to Drunken Clam</li>
-                    <li>Drinking All the Days</li>
-                </ul>
-            </section>
-        </div>
+        <!-- Left Sidebar for Profile -->
+        <aside class="left-pane">
+            <img src="Peter_Griffin.png" alt="Profile Picture" class="profile-img">
+            <h2>Peter Griffin</h2>
+            <h3>Profession: Towel Boy</h3>
+            <p>This man is Peter Griffin, who lives in the way I am desiring for.</p>
 
-        <!-- Right pane for main content -->
-        <div class="right-pane">
+            <ul>
+                <li>Fighting with Mr. Chicken</li>
+                <li>Go to Drunken Clam</li>
+                <li>Drinking All the Days</li>
+            </ul>
+        </aside>
 
-            <!-- Career Section -->
+        <!-- Right Main Content Area -->
+        <main class="right-pane">
+            <!-- Career Summary Section -->
             <section id="career">
-                <h1>Career Summary</h1>
-                <table border="1">
-                    <tr>
-                        <th>Job Title</th>
-                        <th>Employer</th>
-                        <th>Years</th>
-                    </tr>
-                    <tr>
-                        <td>Towel Boy</td>
-                        <td>Marguerite Pewterschmidt</td>
-                        <td>Before he met Lois</td>
-                    </tr>
-                    <tr>
-                        <td>Sailor/Fisherman</td>
-                        <td>Self-employed</td>
-                        <td>2005</td>
-                    </tr>
-                    <tr>
-                        <td>Clerk at Shipping Department</td>
-                        <td>Pawtucket Brewery</td>
-                        <td>2005 - Present</td>
-                    </tr>
+                <h2>Career Summary</h2>
+                <table class="career-table">
+                    <tr><th>Job Title</th><th>Employer</th><th>Years</th></tr>
+                    <tr><td>Towel Boy</td><td>Marguerite Pewterschmidt</td><td>Before Lois</td></tr>
+                    <tr><td>Sailor/Fisherman</td><td>Self-employed</td><td>2005</td></tr>
+                    <tr><td>Clerk at Shipping Department</td><td>Pawtucket Brewery</td><td>2005 - Present</td></tr>
                 </table>
             </section>
 
             <!-- Education Section -->
             <section id="education">
-                <h1>Education and Qualifications</h1>
-                <table border="1">
-                    <caption>Education Background</caption>
-                    <thead>
-                        <tr>
-                            <th>Degree</th>
-                            <th>Institution</th>
-                            <th>Year of Graduation</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Junior High School</td>
-                            <td>Buddy Cianci</td>
-                            <td>1973</td>
-                        </tr>
-                        <tr>
-                            <td>High School</td>
-                            <td>James Woods High</td>
-                            <td>1977</td>
-                        </tr>
-                    </tbody>
+                <h2>Education & Qualifications</h2>
+                <table class="education-table">
+                    <tr><th>Degree</th><th>Institution</th><th>Year</th></tr>
+                    <tr><td>Junior High School</td><td>Buddy Cianci</td><td>1973</td></tr>
+                    <tr><td>High School</td><td>James Woods High</td><td>1977</td></tr>
                 </table>
 
-                <table border="1">
-                    <caption>Professional Qualifications</caption>
-                    <thead>
-                        <tr>
-                            <th>Certification</th>
-                            <th>Issued By</th>
-                            <th>Year</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Community Guard</td>
-                            <td>Quahog Four's Security group</td>
-                            <td>1999</td>
-                        </tr>
-                    </tbody>
+                <table class="education-table">
+                    <tr><th>Certification</th><th>Issued By</th><th>Year</th></tr>
+                    <tr><td>Community Guard</td><td>Quahog Four's Security Group</td><td>1999</td></tr>
                 </table>
             </section>
 
             <!-- Hobbies Section -->
             <section id="hobbies">
-                <h1>Interests and Hobbies</h1>
-                <ol>
-                    <li>Drinking beer
-                        <a href="https://familyguy.fandom.com/wiki/Peter_Griffin?file=FamilyGuy_Single_PeterDrink_R7.jpg">Visit family guy wiki</a>
-                    </li>
+                <h2>Interests & Hobbies</h2>
+                <ul>
+                    <li>Drinking beer <a href="https://familyguy.fandom.com/wiki/Peter_Griffin?file=FamilyGuy_Single_PeterDrink_R7.jpg">Visit family guy wiki</a></li>
                     <li>Singing "Surfin' Bird"</li>
                     <li>Watching TV</li>
-                    <li>Finding interesting things and doing them immediately</li>
-                </ol>
+                    <li>Finding new challenges and completing them immediately</li>
+                </ul>
             </section>
-        </div>
+        </main>
     </div>
 
-    <!-- Footer Navigation -->
+    <!-- Footer -->
     <footer>
         <nav>
-            <a href="#profile">Profile</a> |
             <a href="#career">Career Summary</a> |
-            <a href="#education">Education and Qualifications</a> |
+            <a href="#education">Education & Qualifications</a> |
             <a href="#hobbies">Interests & Hobbies</a>
         </nav>
     </footer>

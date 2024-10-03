@@ -1,87 +1,103 @@
-/* Body styling */
+/* General Body Styling */
 body {
-    font-family: Arial;
-    background: radial-gradient(white, lightgray);
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
 }
 
-/* Top pane for navigation */
-.top-pane {
-    background-color: #f0f0f0;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 2px solid #ddd;
+/* Header */
+.header {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: right;
 }
 
-.logo {
-    width: 100px;
-    border-radius: 50%;
-}
-
-/* Using the li-line style */
-.nav-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.nav-section ul li {
-    display: inline;
+.header nav a {
+    color: #3b5998;
     margin: 0 10px;
-}
-
-.nav-section ul li a {
     text-decoration: none;
-    color: darkblue;
+    font-size: 18px;
 }
 
-/* Three-pane layout */
+/* Left Pane (Profile) */
 .left-pane {
     width: 25%;
-    float: left;
-    background-color: #f9f9f9;
+    background-color: #4CAF50;
+    color: white;
     padding: 20px;
+    float: left;
+    text-align: center;
+    height: 100vh;
 }
 
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.left-pane h2, .left-pane h3 {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.left-pane p {
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.left-pane ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.left-pane ul li {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Right Pane (Main Content) */
 .right-pane {
     width: 70%;
     float: right;
+    background-color: #e6f7ff;
     padding: 20px;
 }
 
-/* Profile Image */
-.profile-img {
-    width: 200px;
-    border-radius: 10px;
+.right-pane h2 {
+    color: #004080;
+    margin-top: 0;
 }
 
-/* Styled table */
-.styled-table {
+/* Career Summary & Education Tables */
+table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
 }
 
-.styled-table th, .styled-table td {
-    border: 1px solid #000;
+table th, table td {
     padding: 10px;
+    border: 1px solid #004080;
     text-align: left;
 }
 
-/* Alternating row colors */
-.styled-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+table tr:nth-child(even) {
+    background-color: #cceeff;
 }
 
-/* Hobbies List */
-.hobbies-list {
-    list-style-type: square;
-    color: darkblue;
+/* Footer */
+footer {
+    clear: both;
+    padding: 10px;
+    background-color: #ccc;
+    text-align: center;
 }
 
-/* Footer Navigation */
 footer nav a {
+    color: #3b5998;
     margin: 0 10px;
     text-decoration: none;
-    color: darkblue;
 }
